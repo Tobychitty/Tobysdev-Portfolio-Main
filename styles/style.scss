@@ -1,0 +1,39 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "work";
+@import "contact";
+
+@media screen and (max-width: 591px) {
+  nav {
+    min-height: 15vh;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .logo {
+    padding: 1rem;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      padding: 1rem;
+    }
+  }
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

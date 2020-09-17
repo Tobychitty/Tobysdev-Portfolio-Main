@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Python/Web Developer" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Tobysdev</title>
+  <body>
+    <header class="header-content">
+      <nav>
+          <h1 class="logo">Tobysdev.</h1>
+          <ul class="nav-links">
+            <li><a href="../">HOME</a></li>
+            <li><a href="../work/">WORK</a></li>
+            <li><a href="./">CONTACT</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-form">
+          <form name="contact" method="POST" data-netlify="true">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+    </main>
+</body>
+</html>

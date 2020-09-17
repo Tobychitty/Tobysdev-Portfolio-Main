@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(4rem + 5vw);
+  --header3: calc(1rem + 3vw);
+  --header4: calc(1rem + 2vw);
+  --text: calc(1.5rem + 0.5vw);
+  --svg: calc(3rem + 3vw);
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+  color: black;
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  height: var(--svg);
+  width: var(--svg);
+}

@@ -1,0 +1,25 @@
+.projects {
+  width: 100%;
+  margin: auto;
+  min-height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 5rem;
+  h4 {
+    margin: 2rem 5rem;
+    padding: 2rem 5rem;
+  }
+  img {
+    width: 40%;
+  }
+}
+
+.travelly,
+.elena,
+.path-finder,
+.rain-analysis {
+  flex: 1 1 10rem;
+}
