@@ -10,14 +10,15 @@
 @import "work";
 @import "contact";
 
-@media screen and (max-width: 591px) {
-  nav {
-    min-height: 15vh;
-    text-align: center;
-    flex-wrap: wrap;
+@media screen and (max-width: 898px) {
+  .header-content {
+    width: 100%;
+    margin: auto;
   }
+
   .logo {
-    padding: 1rem;
+    width: 100vw;
+    justify-content: center;
   }
 
   .socials {
@@ -25,6 +26,52 @@
     justify-content: space-around;
     a {
       padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 733px) {
+  #projects-main {
+    background: linear-gradient(white, #e4e4e4);
+  }
+  nav {
+    width: 100vw;
+  }
+  .nav-links {
+    width: 100vw;
+    li {
+      width: 31%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0rem;
+      overflow: hidden;
+    }
+  }
+  .projects {
+    width: 100%;
+    margin: auto;
+    .project {
+      height: 22rem;
+      width: 22rem;
+    }
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .contact-main {
+    margin-top: 0rem;
+  }
+  .contact-form {
+    width: 95vw;
+    margin-top: 1rem;
+    form {
+      width: 100%;
+      padding: 2rem;
+      input,
+      textarea {
+        margin: 1rem;
+      }
     }
   }
 }

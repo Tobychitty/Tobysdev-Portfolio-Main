@@ -1,132 +1,64 @@
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
   animation: opening 1s ease-in-out;
 }
-.header-content {
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  position: relative;
-}
 
-nav {
-  display: flex;
-  min-height: 10vh;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  .logo {
-    flex: 1 1 40rem;
-    padding: 0rem 2rem;
-  }
-  ul {
-    flex: 1 1 40rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 3rem;
-  }
-  a:hover {
-    color: #dbc16a;
-    transition: all ease-in-out 0.6s;
-  }
-}
-
-main {
-  display: flex;
+#hero {
   min-height: 90vh;
-}
-
-.image-content {
-  flex: 1 1 40rem;
-  background: url(/img/nasa-Q1p7bh3SHj8-unsplash.jpg);
-  background-size: cover;
-}
-
-.text-content {
   display: flex;
   flex-direction: column;
-  flex: 1 1 40rem;
-  justify-content: center;
-  align-items: center;
+  padding: 5rem 0rem;
+  position: relative;
   .intro {
-    align-self: flex-start;
-    padding: 5rem 2rem;
+    display: flex;
+    flex: 1 1 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    .more {
+      color: white;
+      font-weight: bold;
+      background: #dd5b5b;
+      padding: 1rem 2.5rem;
+      margin: 2rem;
+      border: none;
+      border-radius: 1rem;
+      z-index: 2;
+      &:hover {
+        background: #ca2929;
+        cursor: pointer;
+      }
+    }
+  }
+  .wave {
+    position: absolute;
+    background: url(../img/wave4.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
   }
   .socials {
+    width: fit-content;
+    margin: auto;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 4rem 3rem;
-  }
-  svg path:hover {
-    fill: #c9aa46;
-    transition: all ease-in-out 0.6s;
+    justify-content: center;
+    background: #dd5b5b;
+    border-radius: 1rem;
+    z-index: 2;
+    a {
+      padding: 1rem 2rem;
+      &:hover {
+        background: #ca2929;
+        border-radius: 1rem;
+      }
+      svg path {
+        fill: white;
+      }
+    }
   }
 }
-
-// .image-content {
-//   flex: 1 1 40rem;
-//   height: 100%;
-//   width: 100%;
-//   background-image: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg);
-//   background-size: cover;
-//   color: rgb(156, 62, 62)84, 12, 12);
-// }
-// .main-content {
-//   flex: 1 1 40rem;
-// }
-
-// nav {
-//   display: flex;
-//   align-items: center;
-//   font-weight: bold;
-//   min-height: 10vh;
-//   .nav-links {
-//     display: flex;
-//     flex-wrap: wrap;
-//     padding: 2rem 1rem;
-//     flex: 1 1;
-//     justify-content: space-between;
-//     margin: 0rem 3rem;
-
-//     a {
-//       padding: 1rem;
-//     }
-//     a:hover {
-//       color: #dbc16a;
-//       transition: all ease-in-out 0.6s;
-//     }
-//   }
-// }
-
-// .text-content {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 90vh;
-//   .intro {
-//     flex: 1 1 20rem;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-end;
-//     margin: 1rem 3rem;
-//     h4 {
-//       color: rgb(116, 116, 116);
-//     }
-//   }
-//   .socials {
-//     flex: 1 1 10rem;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     margin: 1rem 3rem;
-//     align-items: center;
-
-//     svg path:hover {
-//       fill: #dbc16a;
-//       transition: all ease-in-out 0.6s;
-//     }
-//   }
-// }

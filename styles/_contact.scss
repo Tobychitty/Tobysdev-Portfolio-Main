@@ -1,12 +1,33 @@
+.contact-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  .wave {
+    position: absolute;
+    background: url(../img/wave4.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    margin: auto;
+    z-index: -5;
+  }
+}
+
 .contact-form {
-  min-height: 70vh;
-  width: 100%;
+  min-height: 60vh;
+  width: fit-content;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   margin: 2rem 0rem;
   font-weight: bold;
+  background: rgb(255, 255, 255);
+  border-radius: 2rem;
   form {
     padding: 3rem 10rem;
     box-shadow: 0px 10px 10px rgba($color: #000000, $alpha: 0.2),
@@ -16,7 +37,6 @@
     align-items: center;
     flex-direction: column;
     border-radius: 2rem;
-
     input,
     textarea {
       margin: 2rem;
@@ -25,16 +45,20 @@
       }
     }
     textarea {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-family: "Roboto", sans-serif;
     }
     button {
       width: 80%;
       padding: 1rem;
-      background: rgb(62, 110, 182);
+      background: #dd5b5b;
       color: white;
+      border: none;
+      border-radius: 1rem;
+      font-weight: bold;
       &:focus,
       &:hover {
-        background: rgb(44, 82, 138);
+        background: #ca2929;
       }
     }
   }
