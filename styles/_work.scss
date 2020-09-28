@@ -44,10 +44,8 @@
     border-radius: 1rem;
     &:hover {
       .card-img {
-        svg {
-          fill: white;
-          transition: ease-in-out 0.5s;
-        }
+        background: #ca2929;
+        transition: ease-in-out 0.5s;
       }
     }
     .card-img {

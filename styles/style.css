@@ -289,8 +289,8 @@ body {
   border-radius: 1rem;
 }
 
-.projects .project:hover .card-img svg {
-  fill: white;
+.projects .project:hover .card-img {
+  background: #ca2929;
   -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
